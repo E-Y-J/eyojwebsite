@@ -1,12 +1,12 @@
 import './App.css';
-import call from '../src/call.png';
-import mail from '../src/mail.png';
-import git from '../src/git.png';
-import linkdin from '../src/linkdin.png';
+import call from '../src/images/call.png';
+import mail from '../src/images/mail.png';
+import git from '../src/images/git.png';
+import linkdin from '../src/images/linkdin.png';
 
 function App() {
   return (
-    <div className="App rowElements centerVer centerHor">
+    <div className="App centerVer centerHor">
 
     <div className='container centerVer centerHor'>
       <h1>ELLIJAH JIMENEZ</h1>
@@ -23,11 +23,11 @@ function App() {
         </div>
         <div className='contactContainer rowElements'>
           <a className='icon'><img src={git}/></a>
-          <a className='textContainer' href='https://github.com/E-Y-J'>https://github.com/E-Y-J</a>
+          <a className='textContainer' href='https://github.com/E-Y-J'  target="_blank" rel="noopener noreferrer">https://github.com/E-Y-J</a>
         </div>
         <div className='contactContainer rowElements'>
           <a className='icon'><img src={linkdin}/></a>
-          <a className='textContainer' href='https://www.linkedin.com/in/ellijah-jimenez-9495071b0/'>https://www.linkedin.com/</a>
+          <a className='textContainer' href='https://www.linkedin.com/in/ellijah-jimenez-9495071b0/'  target="_blank" rel="noopener noreferrer">https://www.linkedin.com/</a>
         </div>
       </div>
 
