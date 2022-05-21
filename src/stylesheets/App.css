@@ -1,12 +1,14 @@
-html, body, #app, #app>div {
+html, body, #root, #mainContainer, #mainContainer>div, .App {
   color: #dbd3d8;
-  min-height: 100%;
+  height: 100%;
 }
-html{
+.App{
   display: flex;
+  background-color: #223843;
   align-items: center;
   justify-content: center;
 }
+
 .rowElements{
   display: flex;
   flex-direction: row;
@@ -26,7 +28,7 @@ html{
 }
 
 @media only screen and (min-width: 948px) {
-  .App{
+  .mainContainer{
     font-size: calc(10px + 2vmin);
     display: flex;
     flex-direction: row;
@@ -49,7 +51,7 @@ html{
 }
 
 @media only screen and (max-width: 1050px) {
-  .App{
+  .mainContainer{
     font-size: calc(10px + 2vmin);
     display: flex;
     flex-direction: column;

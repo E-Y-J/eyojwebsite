@@ -1,37 +1,19 @@
-import './App.css';
-import call from '../src/images/call.png';
-import mail from '../src/images/mail.png';
-import git from '../src/images/git.png';
-import linkdin from '../src/images/linkdin.png';
+import '../src/stylesheets/App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import MainPage from './components/MainPage';
+import ImpossibleTTT from './components/ImpossibleTTT';
 
 function App() {
   return (
-    <div className="App centerVer centerHor">
-
-    <div className='container centerVer centerHor'>
-      <h1>ELLIJAH JIMENEZ</h1>
-    </div>
-
-      <div className='container colElements centerHor'>
-        <div className='contactContainer rowElements'>
-          <a className='icon'><img src={call}/></a>
-          <a className='textContainer'>+63 917 158 6030</a>
-        </div>
-        <div className='contactContainer rowElements'>
-          <a className='icon'><img src={mail}/></a>
-          <a className='textContainer' href = "mailto: ellijahjimenez@outlook.com">ellijahjimenez@outlook.com</a>
-        </div>
-        <div className='contactContainer rowElements'>
-          <a className='icon'><img src={git}/></a>
-          <a className='textContainer' href='https://github.com/E-Y-J'  target="_blank" rel="noopener noreferrer">https://github.com/E-Y-J</a>
-        </div>
-        <div className='contactContainer rowElements'>
-          <a className='icon'><img src={linkdin}/></a>
-          <a className='textContainer' href='https://www.linkedin.com/in/ellijah-jimenez-9495071b0/'  target="_blank" rel="noopener noreferrer">https://www.linkedin.com/</a>
-        </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/*" element={<MainPage />} />
+          <Route path="/impossiblettt" element={<ImpossibleTTT />} />
+        </Routes>
       </div>
-
-    </div>
+    </Router>
   );
 }
 
