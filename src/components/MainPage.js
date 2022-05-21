@@ -18,7 +18,7 @@ class MainPage extends Component {
             <div className="mainContainer centerVer centerHor">
 
             <div className='container centerVer centerHor'>
-            <h1>ELLIJAH JIMENEZ</h1>
+            <h1 href="http://ellijahjimenez.com/easteregg">ELLIJAH JIMENEZ</h1>
             </div>
 
             <div className='container colElements centerHor'>
