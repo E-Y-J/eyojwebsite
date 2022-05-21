@@ -92,3 +92,8 @@ h1{
 .icon{
   width: 100px;
 }
+
+.name{
+  font-size: 75px;
+  text-align: center;
+}
